@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стрелковый клуб Спектр</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/style.css')}}">
+    <link href="{{url_for('static', filename='img/icons/Vector 1.svg')}}" rel="shortcut icon" />
+</head>
+
+<body>
+    {%include 'header.html' %}
+    {% block header %}
+    {% endblock %}
+    <div class="photo">
+        <img src="{{ url_for('static', filename='img/rifles.jpg') }}">
+    </div>
+    <!-- Линия -->
+    <div class="line-1">
+    </div>
+    <a name="part2"></a>
+    <div class="white-block">
+        <!-- Текстовый блок -->
+        <div class="text-block-info" id="part1">
+            <div class="text-block-font-dark">
+                <div>
+                    <p class="title" name="part2">
+                        О нас
+                    </p>
+                </div>
+                <div class="subtitle">
+                    <div>
+                        <p>
+                            «Спектр» — крытый стрелковый комплекс, безопасный и комфортный для занятия практической
+                            стрельбой в любое
+                            время года.
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            На территории «Спектра» к вашим услугам: стрелковые галереи, в которых стрельбу можно вести
+                            в
+                            движении и
+                            с разворотом на 180 градусов, опытные инструкторы по практической стрельбе, прокат оружия и
+                            снаряжения.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line-1">
+    </div>
+    <div class="white-block-2">
+        <a name="part1"></a>
+        <div class="title">
+            <p>
+                Наши инструкторы
+            </p>
+        </div>
+        <div class="instructors">
+            <div>
+                <img src="{{ url_for('static', filename='img/members/Rectangle 9.jpg') }}">
+                <p class="name">
+                    Александра Седых
+                </p>
+                <p>
+                    Инструктор и тренер IPSC. Работает в клубе с 2011 года.
+                </p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='img/members/Rectangle 6.jpg') }}" alt="">
+                <p class="name">
+                    Марина Каунова
+                </p>
+                <p>
+                    Инструктор и тренер IPSC. Работает в клубе с 2012 года.
+                </p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='img/members/Rectangle 7.jpg') }}" alt="">
+                <p class="name">
+                    Людмила Мартынова
+                </p>
+                <p>
+                    Инструктор и тренер IPSC. Работает в клубе с 2012 года.
+                </p>
+            </div>
+            <div>
+                <img src="{{ url_for('static', filename='img/members/Rectangle 8.jpg') }}" alt="">
+                <p class="name">
+                    Анастасия Воронова
+                </p>
+                <p>
+                    Инструктор и тренер IPSC. Первый разряд по тактической трельбе. Работает в клубе с 2009 года.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="line-1">
+    </div>
+    <div class="white-block-3">
+        <div class="border-box">
+            <div>
+                <p>
+                    Напишите нам
+                </p>
+            </div>
+            <div>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div>
+                        <input placeholder="Имя" type="text" name="name" value="">
+                    </div>
+                    <div>
+                        <input placeholder="Email" type="text" name="email" value="">
+                    </div>
+                    <div>
+                        <textarea placeholder="Сообщение" name="letter" id=""></textarea>
+                    </div>
+                    <div class="button">
+                        <a href="#"><span>Отправить</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="line-1">
+    </div>
+    <footer>
+        {%include 'footer.html' %}
+        {% block footer %}{% endblock %}
+    </footer>
+</body>
+
+</html>

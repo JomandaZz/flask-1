@@ -1,0 +1,17 @@
+{% block header %}
+
+<div class="logo">
+    <div>
+        <img src="{{ url_for('static', filename='img/icons/Vector 1.svg') }}">
+        <span>Спектр</span>
+    </div>
+
+</div>
+<div class="navigation">
+    <a href="/">Главная</a>
+    <a href="#part2">О нас</a>
+    <a href="#part3">Наши инструкторы</a>
+    <a href="/shop">Магазин</a>
+    <a href="/cabinet"><span>Личный кабинет</span></a>
+</div>
+{% endblock %}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/card.css')}}">
+    <link href="{{url_for('static', filename='img/icons/Vector 1.svg')}}" rel="shortcut icon" />
+    <title>Магазин</title>
+</head>
+
+<body>
+    {%include 'header.html' %}
+    <div class="conteiner">
+        <div class="content">
+            <div class="title">
+                <p>
+                    Арбалеты
+                </p>
+                <!---->
+            </div>
+            <div class="shop__list">
+                <div class="shop__list-content">
+                    <div class="content__body">
+                        <div class="content__row">
+                            <div class="content__column content__column_1">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/bow/Ek Blade Plus.jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: Ek Blade Plus</div>
+                                    <div class="content__price">Цена: 30000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_2">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/bow/Ek Cobra System R9.jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: Ek Cobra System R9</div>
+                                    <div class="content__price">Цена: 15000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_3">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/bow/Junxing Drakon.jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: Junxing Drakon</div>
+                                    <div class="content__price">Цена: 6000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_4">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/bow/Man Kung MK-XB23.png" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: Man Kung MK-XB23</div>
+                                    <div class="content__price">Цена: 30000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {%include 'footer.html' %}
+
+</body>
+
+</html>

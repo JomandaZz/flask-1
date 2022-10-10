@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/card.css')}}">
+    <link href="{{url_for('static', filename='img/icons/Vector 1.svg')}}" rel="shortcut icon" />
+    <title>Магазин</title>
+</head>
+
+<body>
+    <header>
+        {%include 'header.html' %}
+        {% block header %}{% endblock %}
+    </header>
+    <div class="conteiner">
+        <div class="content">
+            <div class="title">
+                <p>
+                    Автоматические винтовки
+                </p>
+            </div>
+            <div class="shop__list">
+                <div class="shop__list-content">
+                    <div class="content__body">
+                        <div class="content__row">
+                            <div class="content__column content__column_1">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: AK-47 калибр 7.62 мм</div>
+                                    <div class="content__price">Цена: 3000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_2">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="">
+                                    </div>
+                                    <div class="content__describe">Описание: FAMAS калибр мм5.56</div>
+                                    <div class="content__price">Цена: 4000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_3">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: DIEMACO C7 Калибр мм 5.56</div>
+                                    <div class="content__price">Цена: 5000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper">
+                                <div class="content__column content__column_4">
+                                    <div class="content__item">
+                                        <div class="content__image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="content__describe">Описание: AUG Калибр 5.56x45 NATO</div>
+                                        <div class="content__price">Цена: 3000$</div>
+                                        <a href="" class="content__btn"><span>Купить</span></a>
+                                        <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                    </div>
+                                </div>
+                                <div class="content__column content__column_5">
+                                    <div class="content__item">
+                                        <div class="content__image">
+                                            <img src="" alt="">
+                                        </div>
+                                        <div class="content__describe">Описание: XM8 калибр 5.56x45</div>
+                                        <div class="content__price">Цена: 6000$</div>
+                                        <a href="" class="content__btn"><span>Купить</span></a>
+                                        <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+        {%include 'footer.html' %}
+        {% block footer %}{% endblock %}
+    </footer>
+
+</body>
+
+</html>

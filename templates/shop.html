@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стрелковый клуб Спектр</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/secondpage.css')}}">
+    <link href="{{url_for('static', filename='img/icons/Vector 1.svg')}}" rel="shortcut icon" />
+</head>
+
+<body>
+    <header>
+        {%include 'header.html'%}
+        {% block header %}{% endblock %}
+    </header>
+    <div class="store">
+        <div class="title">
+            <p>
+                Магазин
+            </p>
+        </div>
+        <div class="cards">
+            <div class="rifles">
+                <p>
+                    Автоматические винтовки
+                </p>
+                <a href="/rifles">
+                    <img src="{{url_for('static', filename='img/guns/rifles.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="old">
+                <a href="/old">
+                    <p>
+                        Раритетные
+                    </p>
+                    <img src="{{url_for('static', filename='img/guns/winchester.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="pistol">
+                <a href="/pistols">
+                    <p>
+                        Пистолеты
+                    </p>
+                    <img src="{{url_for('static', filename='img/guns/pistol.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="bows">
+                <a href="/bows">
+                    <p>
+                        Арбалеты
+                    </p>
+                    <img src="{{url_for('static', filename='img/guns/bow.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="hunter">
+                <a href="/hunter">
+                    <p>
+                        Охотничьи ружья
+                    </p>
+                    <img src="{{url_for('static', filename='img/guns/shotgun.jpg')}}" alt="">
+                </a>
+            </div>
+            <div class="bullets">
+                <a href="/bullets">
+                    <p>
+                        Патроны
+                    </p>
+                    <img src="{{url_for('static', filename='img/guns/bullets.jpg')}}" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="line-1">
+    </div>
+    <footer>
+        {%include 'footer.html' %}
+        {% block footer %}
+        {% endblock %}
+    </footer>
+</body>
+
+</html>

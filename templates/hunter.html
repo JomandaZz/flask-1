@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/card.css')}}">
+    <link href="{{url_for('static', filename='img/icons/Vector 1.svg')}}" rel="shortcut icon" />
+    <title>Магазин</title>
+</head>
+
+<body>
+    {%include 'header.html' %}
+    <div class="conteiner">
+        <div class="content">
+            <div class="title">
+                <p>Охотничьи ружья</p>
+            </div>
+            <div class="shop__list">
+                <div class="shop__list-content">
+                    <div class="content__body">
+                        <div class="content__row">
+                            <div class="content__column content__column_1">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/hunter/remington 700.jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: Remington 700 калибр 308 winchester</div>
+                                    <div class="content__price">Цена: 30000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_2">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/hunter/ruger 10.jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: Ruger 10 калибр 308 winchester</div>
+                                    <div class="content__price">Цена: 50000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_3">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/hunter/ruger m77.jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: Ruger M77 калибр 308 winchester</div>
+                                    <div class="content__price">Цена: 15000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {%include 'footer.html' %}
+
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Стрелковый клуб Спектр</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/thirt.css')}}">
+    <link href="img/icons/Vector 1.svg" rel="shortcut icon" />
+</head>
+
+<body>
+    <div class="conteiner">
+        <header>
+            {%include 'header.html'%}
+            {% block header %}{% endblock %}
+        </header>
+        <div class="title">
+            <p>
+                Личный кабинет
+            </p>
+        </div>
+        <div class="border-box">
+            <div>
+                <form action="#" method="post" enctype="multipart/form-data">
+                    <div>
+                        <input placeholder="Логин" type="text" name="name" value="" tabindex="1">
+                    </div>
+                    <div>
+                        <input placeholder="Пароль" type="password" name="email" value="" tabindex="2">
+                    </div>
+                    <div>
+                        <a href="#" class="forgot">
+                            Забыли пароль?
+                        </a>
+                    </div>
+                    <div class="button">
+                        <a href="#"><span>Отправить</span></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="line-1">
+    </div>
+    <footer>
+        {%include 'footer.html' %}
+        {% block footer %}{% endblock %}
+    </footer>
+    </div>

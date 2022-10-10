@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='CSS/card.css')}}">
+    <link href="{{url_for('static', filename='img/icons/Vector 1.svg')}}" rel="shortcut icon" />
+    <title>Магазин</title>
+</head>
+
+<body>
+    {%include 'header.html' %}
+    <div class="conteiner">
+        <div class="content">
+            <div class="title">
+                <p>
+                    Раритетные
+                </p>
+                <!---->
+            </div>
+            <div class="shop__list">
+                <div class="shop__list-content">
+                    <div class="content__body">
+                        <div class="content__row">
+                            <div class="content__column content__column_1">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/old rifles/mauser 98k .jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: Mauser 98k Патрон 7,9 мм Patrone 88</div>
+                                    <div class="content__price">Цена: 10000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_2">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/old rifles/MP-40.jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Описание: MP-40 калибр 9 мм</div>
+                                    <div class="content__price">Цена: 4000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="content__column content__column_3">
+                                <div class="content__item">
+                                    <div class="content__image">
+                                        <img src="img/store guns/old rifles/sten mk 2 s.jpg" alt="">
+                                    </div>
+                                    <div class="content__describe">Sten MK2 S Калибр: 9x19 мм Parabellum</div>
+                                    <div class="content__price">Цена: 150000$</div>
+                                    <a href="" class="content__btn"><span>Купить</span></a>
+                                    <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                </div>
+                            </div>
+                            <div class="wrapper">
+                                <div class="content__column content__column_4">
+                                    <div class="content__item">
+                                        <div class="content__image">
+                                            <img src="img/store guns/old rifles/STG 44.jpg" alt="">
+                                        </div>
+                                        <div class="content__describe">Описание: STG 44 калибр 7,92x33 мм Kurtz</div>
+                                        <div class="content__price">Цена: 150000$</div>
+                                        <a href="" class="content__btn"><span>Купить</span></a>
+                                        <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                    </div>
+                                </div>
+                                <div class="content__column content__column_5">
+                                    <div class="content__item">
+                                        <div class="content__image">
+                                            <img src="img/store guns/old rifles/tompson.jpg" alt="">
+                                        </div>
+                                        <div class="content__describe">Описание: Tompson калибр 45 ACP</div>
+                                        <div class="content__price">Цена: 12000$</div>
+                                        <a href="" class="content__btn"><span>Купить</span></a>
+                                        <a href="" class="content__btn-basket"><span>В корзину</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    {%include 'footer.html' %}
+
+</body>
+
+</html>
